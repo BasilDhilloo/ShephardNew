@@ -4,29 +4,39 @@
     font-family: 'FontAwesome';
     content: "\f078";      
     float: left;
+    /* font-size: 12px; */
 }
 .accordion-opened .accordion-toggle:after {    
     content: "\f054";     
+    font-size: 12px;
+
 }
 
 .plusminus{
-    background-color: #00A7C2;
-    color: #ffffff;
-    width: 22px;
-    height: 22px;
-    padding: 4px;
+  background-color: #00A7C2;
+  color: #ffffff;
+  width: 22px;
+  height: 22px;
+  padding: 6px;
+  /* font-family: "Roboto" !important; */
+  font-size: 10px !important;
+
 }
 
 .minusplus{
-    background-color: #333;
-    color: #ffffff;    
-    width: 22px;
-    height: 22px;
-    padding: 4px;
+  background-color: #333;
+  color: #ffffff;    
+  width: 22px;
+  height: 22px;
+  padding: 6px;
+  font-size: 10px !important;
+
 }
 .buttonText{
+  display: flex !important;
   font-size: 17px !important;
-  color: #005174 !important
+  color: #005174 !important;
+  text-align: left !important;
 }
 
 body {
@@ -57,7 +67,7 @@ body {
     border-color: rgb(234, 233, 233);
     border-style: solid;
     background-size: cover;
-    height: calc(100vh - 0px);
+    height: calc(74vh - 0px);
 }
 
 .bg3-img {
@@ -69,19 +79,19 @@ body {
     border-color: rgb(234, 233, 233);
     border-style: solid;
     background-size: cover;
-    height: calc(75vh - 0px);
+    height: calc(59vh - 0px);
 }
 
 .bg4-img {
     background-color: rgba(255, 255, 255, 0);
-    background-position: bottom;
+    background-position: top;
     background-image: url("./../img/home/pace-of-life-beach-grass.jpg");
     background-repeat: no-repeat;
     border-width: 0px;
     border-color: rgb(234, 233, 233);
     border-style: solid;
     background-size: cover;
-    height: calc(70vh - 0px);
+    height: calc(63vh - 0px);
 }
 
 
@@ -111,6 +121,20 @@ body {
   border-style: solid;
   background-size: cover;
   height: calc(100vh - 0px);
+}
+
+.bg8-img {
+  background-color: rgba(255, 255, 255, 0);
+  background-position: bottom;
+  background-image: url("./../img/jobs/soul-kid-hztl-fade-637225634.jpg");
+  background-color: rgba(255, 255, 255, 0);
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-width: 0px;
+  border-color: rgb(234, 233, 233);
+  border-style: solid;
+  background-size: cover;
+  height: calc(60vh - 0px);
 }
 
 .imageLogo{
@@ -184,24 +208,33 @@ body {
     font-size: 50px;
     line-height: 1.2;
     color: #005174;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto';
  }
+ .firstParaCall{
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #005174;
+  font-family: 'Roboto';
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
 
  .propTech{
     text-align: center;
     font-size: 35px;
     line-height: 1.2;
     color: #00a7c2;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto';
  }
 
  .virtousCircle{
   text-align: center;
-  font-size: 50px;
+  font-size: 54px;
   line-height: 1.2;
   color: #ffffff;
-  font-family: 'Roboto Slab', serif;
-  padding: 25px 10px;
+  font-family: 'Roboto';
+  padding: 37px 10px 20px 10px;
  }
 
  .secondPara{
@@ -222,11 +255,30 @@ body {
     font-weight: 200;
  }
 
+ .secondParaProp{
+  color: rgb(68, 68, 68);
+  display: block;
+  font-family: 'Roboto';
+  font-size: 22px;
+  /* font-stretch: 100%; */
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  line-height: 38px;
+  color: #000;
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-weight: 100;
+}
+
  .thirdPara{
     color: #00a7c2;
     display: block;
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto';
     font-size: 26px;
+    font-weight: 100;
     text-align: left;
     word-spacing: 10px;
     display: inline;
@@ -245,8 +297,9 @@ body {
  .fourthPara{
     color: #00a7c2;
     display: block;
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto';
     font-size: 28px;
+    font-weight: 100;
     /* font-stretch: 100%;   */
     font-style: normal;
     text-align: center;
@@ -260,7 +313,7 @@ body {
   font-family: 'Roboto Slab';
   line-height: 1.2em;
   color: #444444;
-  line-height: 30px;
+  line-height: 26px;
   padding: 3px 20px;
  }
 
@@ -330,14 +383,14 @@ body {
 
  .footer{
     position: relative;
-    font-size: 14px;
+    font-size: 12px;
     font-family: "Roboto Slab", sans-serif;
     min-height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: rgb(255, 255, 255);
-    padding-top: 12px;
+    padding-top: 14px;
     padding-bottom: 10px;
     text-align: center;
     border-width: 1px;
@@ -354,9 +407,16 @@ body {
 }
 
 .liness{
-    border-bottom: 4px double #333;
-    border-spacing: 15px;
-    padding: 20px 0;
+    border-top: 1px solid #333;
+    padding-top: 6px;
+    margin: 20px 0px;
+} 
+.liness:before
+{
+    content: '';
+    border-top: 1px solid #333;
+    display: block;
+    width: 100%;
 }
 
 /* Portfolio Styling */
@@ -455,9 +515,10 @@ body {
     #navArea {
     display: flex;
     justify-content: flex-end;
-    padding: 0px 3%;
+    padding: 40px 3% 30px 3%;
     position: fixed;
     width: 100%;
+    /* margin-top: 10px; */
     top: 0px;
     background: transparent;
     transition: background 0.5s;
@@ -491,21 +552,25 @@ body {
     list-style: none;
     display: flex;
     align-items: center;
-    width: 200px;
+    width: 195px;
     justify-content: space-around;
     }
+
+
     #navArea ul li a {
     text-decoration: none;
     color: white;
     transition: color 0.5s;
-    font-family: 'Roboto Slab';
-    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 15px;
     letter-spacing: 0.5px;
     }
     
     #navArea.is-sticky {
-    background: #373431;
-    opacity: 0.5;
+    background: #444444;
+    opacity: 0.9;
+    padding: 30px 3% 30px 3%;
     }
     
     #navArea.is-sticky a {
@@ -514,6 +579,7 @@ body {
     
     #navArea.is-sticky .logo img {
     height:64px;
+    top: -2px;
     }
     
     section:nth-of-type(2n) {
@@ -528,7 +594,7 @@ body {
     
     
     footer {
-    height: 80px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -593,4 +659,20 @@ input {
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
+}
+
+.card-header{
+  padding: 0px 0px !important;
+}
+
+#textCenter{
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #005174;
+  font-family: 'Roboto';
+  position: relative;
+  top: 400px;
+  left: 100px;
+  /* padding: 5px 25px; */
 }
