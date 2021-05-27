@@ -144,6 +144,9 @@ body {
     max-width: 32% !important;
 }
 
+.mainText{
+  margin-top: 30%; margin-right: 30px; ;
+}
 
 @media only screen and (max-width: 768px) {
     .bg3-img{
@@ -675,4 +678,10 @@ input {
   top: 400px;
   left: 100px;
   /* padding: 5px 25px; */
+}
+
+@media only screen and (min-width: 1200px) {
+  .mainText{
+    margin-top: 30%; margin-right: 30px; ;
+  }
 }
