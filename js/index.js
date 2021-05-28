@@ -13,6 +13,17 @@ $(document).ready(function(){
         $(this).prev(".card-header").find(".fa").removeClass("minusplus").addClass("plusminus");
 
     });
+
+
+      //   // Toggle plus minus icon on show hide of collapse element
+      //   $(".collapseJobs").on('show.bs.collapse', function(){
+      //     $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+      //     $(this).prev(".card-header").find(".fa").removeClass("plusminus").addClass("minusplusJobs");
+      // }).on('hide.bs.collapse', function(){
+      //     $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+      //     $(this).prev(".card-header").find(".fa").removeClass("minusplusJobs").addClass("plusminus");
+  
+      // });
 });
 
 
