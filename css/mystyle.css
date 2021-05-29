@@ -200,26 +200,6 @@ body {
   padding: 0px !important;
 } 
 
-/* The navbar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Navbar links */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 30px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
 
 .nopadding {
     padding-right: 0px !important;
@@ -803,75 +783,64 @@ body {
     font-family: lato;
     }
     
-    #navArea {
-    display: flex;
-    justify-content: flex-end;
-    padding: 40px 3% 30px 3%;
-    position: fixed;
-    width: 100%;
-    /* margin-top: 10px; */
-    top: 0px;
-    background: transparent;
-    transition: background 0.5s;
-    height: 61px;
-    z-index: 1
-    }
-    section {
-    height: 500px;
-    padding: 200px 0;
-    font-size: 50px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    }
-    
-    section:nth-of-type(1) {
-    margin-top: 84px;
-    }
-    
-    #navArea .logo img {
-      height: auto;
-      width: 250px;
-      transition: height 0.5s;
-      position: fixed;
-      top: 17px;
-      left: 70px;
-      padding: 7px 0px;
-    }
-    
-    #navArea ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    width: 195px;
-    justify-content: space-around;
-    }
+.topnav{
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 3% 30px 3%;
+  position: fixed;
+  width: 100%;
+  /* margin-top: 10px; */
+  top: 0px;
+  background: transparent;
+  transition: background 0.5s;
+  height: 61px;
+  z-index: 1;
+}
 
 
-    #navArea ul li a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.5s;
-    font-family: 'Roboto';
-    font-weight: 100;
-    font-size: 15px;
-    letter-spacing: 0.5px;
-    }
-    
-    #navArea.is-sticky {
-    background: #444444;
-    opacity: 0.9;
-    padding: 30px 3% 30px 3%;
-    }
-    
-    #navArea.is-sticky a {
-    color:#fff;
-    }
-    
-    #navArea.is-sticky .logo img {
-    height:64px;
-    top: -2px;
-    }
+/* Navbar links */
+.topnav a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s;
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  margin-right: 32px;
+  z-index: 1;
+
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav.is-sticky {
+  background: #444444;
+  opacity: 0.9;
+  padding: 25px 3% 42px 3%;
+}
+
+.topnav.is-sticky a {
+  color:#fff;
+}
+
+.topnav.is-sticky .logo img {
+  content:url("./../img/portfolio/Lucky-Shepherd-PropTech-White-Logo.png");
+  height:64px;
+  top: -2px;
+  z-index: -1;
+
+}
+
+.topnav a.icon {
+  /* float: right; */
+  display: none;
+}
+  
     
     section:nth-of-type(2n) {
     background: darkcyan;
@@ -883,15 +852,7 @@ body {
     color: #333;
     }
     
-    
-/* .footer {
-  height: 65px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #000;
-  color: #fff;
-} */
+
 
 .centerTextPosition{
   height: 50em;
@@ -914,25 +875,54 @@ body {
 .spanpadding{
   padding: 0px 0px;
 }
-      
-@media screen and (max-width: 600px) {
 
+
+@media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
+    color: #444444;
     float: right;
     display: block;
+    position: absolute;
+    right: -10px;
+    font-size: 23px;
+    top: 20px;
+  }
+}
+
+
+      
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    top: 40%;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 60px;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 8px 10px 8px 20px;
   }
 
-  .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+    color: #444444;
+    float: right;
+    display: block;
+    position: fixed;
+    right: -10px;
+    font-size: 23px;
+    top: 20px;
+    background-color: transparent;
   }
   .topnav.responsive a {
     float: none;
+    color: #005174;
     display: block;
     text-align: left;
+    font-size: 14px;
+    font-size: 16px;
   }
 
   .bg-imgPriv, .bg7-img, .bg8-img{
@@ -992,11 +982,15 @@ body {
 
   .virtousCircle {
     text-align: center;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1.2;
     color: #ffffff;
     font-family: 'Roboto';
-    padding: 37px 13px 20px 13px;
+    padding: 37px 18px 20px 18px;
+  }
+
+  .borderLine{
+    border-bottom: 1px solid #e5e5e5;
   }
 
   .virtousCircleJobs{
@@ -1016,15 +1010,16 @@ body {
     height: calc(30vh - 0px);
   }
 
-  #navArea .logo img {
+  /* #navArea .logo img {
     display: none;
-  }
+  } */
 
   .imageLogo {
-    position: relative;
+    position: absolute;
     top: 26%;
     left: 5%;
     max-width: 55% !important;
+    z-index: 1;
   }
 
   .firstParaMain{
@@ -1297,4 +1292,17 @@ span.secondParaJob::marker {
   font-size: 26px !important;
   color: #444444 ;
   padding-left: 10px;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: Arial;
 }

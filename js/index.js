@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 // Header Style
 window.addEventListener("scroll", function() {
-    let navArea = document.getElementById("navArea");
+    let navArea = document.getElementById("myTopnav");
     
     if (window.pageYOffset > 0) {
     navArea.classList.add("is-sticky");
@@ -56,11 +56,13 @@ window.addEventListener("scroll", function() {
     });
     
 
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  
