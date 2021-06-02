@@ -46,8 +46,10 @@
   font-size: 10px !important;
 } */
 .buttonText{
+  font-family: "Roboto";
+  font-weight: 100 !important;
   display: flex !important;
-  font-size: 17px !important;
+  font-size: 18px !important;
   color: #005174 !important;
   text-align: left !important;
 }
@@ -226,6 +228,16 @@ body {
     font-family: 'Roboto';
  }
 
+ .joinCenversationText{
+   font-weight: 100;
+   font-size: 54px;
+   line-height: 65px;
+   color: #ffffff;
+   font-style: normal;
+   font-family: Roboto, Arial, Helvetica, sans-serif;
+   padding-top: 20px;
+ }
+
  .runningImageStyle{
   text-align: center;
   font-size: 36px;
@@ -272,11 +284,12 @@ body {
   }
 
  .firstParaMain{
-  text-align: center;
+  text-align: right;
   font-size: 54px;
   line-height: 1.2;
   color: #005174;
   font-family: 'Roboto';
+  color: #FFFFFF
 }
 
  
@@ -463,6 +476,10 @@ body {
 
 .secondParaPropPadding{
   font-size: 54px;
+  font-style: normal;
+  line-height: 65px;
+  font-weight: 100;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   color: #005174;
 }
 
@@ -486,6 +503,10 @@ body {
 
 .secondParaPropPaddingTwo{
   font-size: 36px;
+  line-height: 43px;
+ font-style: normal;
+ font-weight: 100;
+ font-family: Roboto, Arial, Helvetica, sans-serif;
   padding-top: 1rem;
   color: #00a7c2;
 }
@@ -495,6 +516,10 @@ body {
   padding-right: 50px;
 }
 
+.paddingProp{
+  padding: 0px 0px 0px 0px;
+}
+
  .thirdPara{
     color: #00a7c2;
     display: block;
@@ -502,7 +527,7 @@ body {
     font-size: 26px;
     font-weight: 100;
     text-align: left;
-    word-spacing: 10px;
+    /* word-spacing: 10px; */
     display: inline;
  }
 
@@ -518,7 +543,7 @@ body {
  }
 
  .cardStyle{
-  padding: 10px 5px;
+  padding: 5px 5px;
   border: none !important;
  }
 
@@ -571,13 +596,16 @@ body {
  }
 
  .seventhPara{
-     display: block;
-     font-family: 'Roboto Slab';
-     font-size: 35.9291px;
-     /* font-stretch: 100%;   */
-     font-style: normal;
-     text-align: center;
- }
+  display: block;
+  font-family: 'Roboto Slab';
+  font-weight: 100;
+  line-height: 43px;
+  font-size: 36px;
+  font-weight: 100;
+  color: #00A7C2;
+  font-style: normal;
+  text-align: center;
+}
 
  .lastButtons{
   font-size: 26px;
@@ -888,6 +916,8 @@ body {
     font-size: 23px;
     top: 20px;
   }
+
+
 }
 
 
@@ -923,6 +953,16 @@ body {
     text-align: left;
     font-size: 14px;
     font-size: 16px;
+  }
+
+  .joinCenversationText{
+    font-weight: 100;
+    font-size: 43px;
+    line-height: 52px;
+    color: #ffffff;
+    font-style: normal;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    padding-top: 20px;
   }
 
   .bg-imgPriv, .bg7-img, .bg8-img{
@@ -990,7 +1030,7 @@ body {
   }
 
   .borderLine{
-    border-bottom: 1px solid #e5e5e5;
+    /* border-bottom: 1px solid #e5e5e5; */
   }
 
   .virtousCircleJobs{
@@ -1058,6 +1098,7 @@ body {
     font-size: 32px;
     color: #005174;
     margin-bottom: 0px;
+    line-height: 30px;
     padding-bottom: 0px;
   }
 
@@ -1070,6 +1111,10 @@ body {
   .secondParaPropMargin{
     margin-top: 8%;
     padding-right: 0px;
+  }
+
+  .paddingProp{
+    padding: 0px 0px 0px 15px;
   }
 
   .propTech {
@@ -1156,8 +1201,9 @@ body {
    .seventhPara{
     display: block;
     font-family: 'Roboto Slab';
-    font-size: 32px;
-    /* font-stretch: 100%;   */
+    font-size: 36px;
+    font-weight: 100;
+    color: #00A7C2;
     font-style: normal;
     text-align: center;
   }
