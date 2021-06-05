@@ -1121,6 +1121,10 @@ body {
     display: none;
   }
 
+  .topnav.is-sticky {
+    display: none;
+}
+
   .topnav a.icon {
     color: #444444;
     float: right;
@@ -1130,10 +1134,6 @@ body {
     font-size: 23px;
     top: 32px;
     color: #504F47 !important;
-  }
-
-  .paddingFormJob{
-    padding: 40px 5px 10px;
   }
 }
 
