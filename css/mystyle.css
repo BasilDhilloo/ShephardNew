@@ -1122,7 +1122,7 @@ body {
   }
 
   .topnav.is-sticky {
-    display: none;
+    display: none !important;
 }
 
   .topnav a.icon {
@@ -1175,6 +1175,14 @@ body {
     overflow: hidden;
     padding: 8px 10px 8px 20px;
     transition: none;
+  }
+
+  .topnav.is-sticky .logo img {
+    display: none;
+  }
+
+  .topnav.is-sticky .logoDiv{
+    display: none !important;
   }
 
   .topnav.responsive .icon {
