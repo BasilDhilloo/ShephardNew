@@ -20,40 +20,37 @@
       }
     </style>
 
-    <script>
-    count = 0
-    function changeHeaderImage() {
-        //check so that it does not change every time you scroll,
-        //you can change this condition as per your requirement.
-        if(count == 0)
-            document.getElementById("imageelement").src = "./img/portfolio/Lucky-Shepherd-PropTech-White-Logo.png";
-            count = 1
-    }
-    </script>
   </head>
 
-  <body onscroll="changeHeaderImage()">
+  <body>
+
+
+      
+
     <div class="container-fluid">
         <div class="bg6-img">
             <div class="row nomargin">
                 <div class="col-12 nopadding">
-                    <nav id="navArea">
-                        <div class="logo">
-                          <a href="index.html">
-                            <img id="imageelement" src="./img/portfolio/Lucky-Shepherd-PropTech-Web-Logo.png";  alt="your company logo">
-                          </a>
+                    <div class="topnav" id="myTopnav">
+                        <div class="logo logoDiv">
+                            <a href="index.html">
+                                <img class="imageJob" src="./img/portfolio/Lucky-Shepherd-PropTech-Web-Logo.png"  alt="Shephard Logo">
+                            </a>
                         </div>
-                        <ul>
-                          <li><a href="portfolio.html">Portfolio</a></li>
-                          <li><a href="jobs.html">Jobs</a></li>
-                        </ul>
-                      </nav>
+                        <a class="linkHide" href="portfolio.html">PORTFOLIO</a></li>
+                        <a class="linkHide" href="jobs.html">JOBS</a></li>
+                        
+                        <a style="text-decoration: none;" href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="row justify-content-start nomargin">
-                <div class="col-md-8 justify-content-end">
-                    <div class="row">
-                        <div class="col-12">
+
+            <div class="row justify-content-start nomargin" >
+                <div class="col-md-12 justify-content-end">
+                    <div class="row justify-content-start">
+                        <div class="col-md-12">
                             <p id="textCenter"> Some call it senior living. <br>
                                 We just call it life.</p>
                         </div>
@@ -86,11 +83,11 @@
                     </div>
                 </div>
 
-                <div class="col-lg-10">
-                    <div class="row nomargin mt-4 pt-3 d-flex justify-content-between">
-                        <div class="col-md-4 col-sm-10 mt-4 text-center">  <p class="firstParaCall" style="font-size: 36px; color: #00a7c2;">CALL </p>  <p class="secondPara"> 843.2651.024</p></div>
-                        <div class="col-md-4 col-sm-10 mt-4 text-center">  <p class="firstParaCall" style="font-size: 36px; color: #00a7c2;">VISIT </p>  <p class="secondPara"> 2101 Cane Bay Blvd <br> Summerville, SC 29486</p></div>
-                        <div class="col-md-4 col-sm-10 mt-4 text-center">  <p class="firstParaCall" style="font-size: 36px; color: #00a7c2;">DISCOVER </p>  <p class="secondPara"> WildcatSeniorLiving.com </p> <a href="#" class="fa fa-facebook" style="font-size: 22px;"></a>
+                <div class="col-lg-11">
+                    <div class="row nomargin mt-4 pt-3 d-flex justify-content-around">
+                        <div class="col-md-4 col-sm-10 mt-4 text-center paddingForWeb">  <p class="firstParaCall" style="font-size: 36px; color: #00a7c2;">CALL </p>  <p class="secondPara"> 843.2651.024</p></div>
+                        <div class="col-md-4 col-sm-10 mt-4 text-center paddingForWeb">  <p class="firstParaCall" style="font-size: 36px; color: #00a7c2;">VISIT </p>  <p class="secondPara"> 2101 Cane Bay Blvd <br> Summerville, SC 29486</p></div>
+                        <div class="col-md-4 col-sm-10 mt-4 text-center paddingForWeb">  <p class="firstParaCall" style="font-size: 36px; color: #00a7c2;">DISCOVER </p>  <p class="secondPara"> WildcatSeniorLiving.com </p> <a href="#" class="fa fa-facebook" style="font-size: 22px;"></a>
                             <a href="#" class="fa fa-twitter" style="font-size: 22px;"></a> </div>
                     </div>
                 </div>
@@ -103,7 +100,8 @@
     <div class="container-fluid ">
         <div class="row justify-content-center nomargin">
             <div class="col-lg-11 nopadding">
-               <div class="liness">
+               <div class="liness mt-3">
+                </div>
                     <div class="row justify-content-center mt-4">
                         <div class="col-md-4" style="padding: 10px 0px; text-align: center; align-self: center;">
                             <img src="img/portfolio/the-greens/TG-Color-Logo-2021.png" width="60%" height="auto" />
@@ -118,7 +116,6 @@
                         <div class="col-md-8 imagePadding" style="color: aliceblue;">
                             <img src="./img/portfolio/the-greens/TG-BG-Badge-4x2-800x400-SLF-gray.jpg" width="100%" height="auto" />
                         </div>
-                    </div>
                </div>
             </div>
         </div>
@@ -127,7 +124,8 @@
     <div class="container-fluid ">
         <div class="row justify-content-center nomargin">
             <div class="col-lg-11 nopadding">
-                <div class="liness">
+                <div class="liness mt-3">
+                </div>
                     <div class="row justify-content-center mt-4">
                         <div class="col-md-4" style="padding: 10px 0px; text-align: center; align-self: center;">
                             <img src="img/portfolio/savannah-quarters/SQ-Color-Logo-2021.png" width="60%" height="auto" />
@@ -142,7 +140,6 @@
                         <div class="col-md-8 imagePadding" style="color: aliceblue;">
                             <img src="./img/portfolio/savannah-quarters/SQ-BG-Badge-4x2-800x400-gray.jpg" width="100%" height="auto" />
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -151,7 +148,9 @@
     <div class="container-fluid ">
         <div class="row justify-content-center nomargin">
             <div class="col-lg-11 nopadding">
-                <div class="liness">
+                <div class="liness mt-3">
+                </div>
+
                     <div class="row justify-content-center mt-4" >
                         <div class="col-md-4" style="padding: 10px 0px; text-align: center;  align-self: center;">
                             <img src="img/portfolio/the-range/TR-Color-Logo-2021.png" width="60%" height="auto" />
@@ -166,7 +165,6 @@
                         <div class="col-md-8 imagePadding" style="color: aliceblue;">
                             <img src="./img/portfolio/the-range/TR-BG-Badge-4x2-800x400-gray.jpg" width="100%" height="auto" />
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -176,22 +174,23 @@
     <div class="container-fluid ">
         <div class="row justify-content-center nomargin">
             <div class="col-lg-11 nopadding">
-                <div class="liness">
-                    <div class="row justify-content-center mt-4 ">
-                        <div class="col-md-4 lakeMargin" style="padding: 10px 0px; text-align: center; align-self: center;">
-                            <img src="img/portfolio/csl/Countryside-Lakes-Logo-2021.jpg" width="100%" height="auto" />
-                            <p class="secondPara mt-3" style="text-align: center;"> 
-                                Independent Living <br>
-                                Assisted Living <br>
-                            </p>
-                    
-                        </div>
-                        
-                        <div class="col-md-8 imagePadding" style="color: aliceblue;">
-                            <img src="img/portfolio/csl/CSL-BG-Badge-4x2-800x400-gray-800x400.jpg" width="100%" height="auto" />
-                        </div>
+                <div class="liness mt-3">
+                </div>
+
+                <div class="row justify-content-center mt-4 ">
+                    <div class="col-md-4 lakeMargin" style="padding: 10px 10px; text-align: center; align-self: center;">
+                        <img src="img/portfolio/csl/Countryside-Lakes-Logo-2021.jpg" width="100%" height="auto" />
+                        <p class="secondPara mt-3" style="text-align: center;"> 
+                            Independent Living <br>
+                            Assisted Living <br>
+                        </p>
+                
                     </div>
-               </div>
+                    
+                    <div class="col-md-8 imagePadding" style="color: aliceblue;">
+                        <img src="img/portfolio/csl/CSL-BG-Badge-4x2-800x400-gray-800x400.jpg" width="100%" height="auto" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -200,14 +199,14 @@
     <div class="container-fluid">
         <div class="row justify-content-center nomargin mt-5 pb-3 pt-3" style="background-color: #01679B;">
           <div class="col-12 nopadding" style="text-align: center; padding: 20px 0px;">
-            <p class="firstPara" style="color: #FFFFFF; font-size: 54px;"> Join the conversation</p>
+            <p class="firstPara" style="color: #FFFFFF; font-size: 54px;"> Join the conversation.</p>
           </div>
           
           <div class="col-10 mt-1 mb-3 nopadding">
             <div class="row" >
-              <div class="col-md-4 col-sm-12" style="text-align: center;"> <a href="https://www.gmail.com/" target="_blank"> <button class="lastButtons"><i class="fa fa-envelope-o"></i> INVESTORS </button> </a></div>
-              <div class="col-md-4 col-sm-12" style="text-align: center;"> <a href="https://www.gmail.com/" target="_blank"></a><button class="lastButtons"><i class="fa fa-envelope-o" style="padding: 0px 10px;"></i>NEW BUSINESS</button></a></div>
-              <div class="col-md-4 col-sm-12" style="text-align: center;"> <a href="https://www.gmail.com/" target="_blank"></a><button class="lastButtons"><i class="fa fa-envelope-o"></i>  PRESS</button> </a></div>
+              <div class="col-md-4 col-sm-12" style="text-align: center;"> <a href="https://www.gmail.com/" target="_blank"> <button class="lastButtons"><i class="fa fa-envelope"></i> INVESTORS </button> </a></div>
+              <div class="col-md-4 col-sm-12" style="text-align: center;"> <a href="https://www.gmail.com/" target="_blank"></a><button class="lastButtons"><i class="fa fa-envelope" style="padding: 0px 10px;"></i>NEW BUSINESS</button></a></div>
+              <div class="col-md-4 col-sm-12" style="text-align: center;"> <a href="https://www.gmail.com/" target="_blank"></a><button class="lastButtons"><i class="fa fa-envelope"></i>  PRESS</button> </a></div>
             </div>
           </div>
         </div>
@@ -215,7 +214,7 @@
         <div class="row nomargin justify-content-center" style="background-color: #1D242D;">
           <div class="col-md-10 nopadding align-items-center">
             <div>
-              <p class="footer">Copyright 2021 Lucky Shepherd, LLC   |   All Rights Reserved.   |   info@LuckyShepherd.io   |   PRIVACY   |   PRESS</p>
+              <p class="footer">Copyright 2021 Lucky Shepherd, LLC   |   All Rights Reserved.   |   info@LuckyShepherd.io   |  <a style="text-decoration: none; color:rgb(255, 255, 255) ;" href="privacy.html">  PRIVACY </a>   |   PRESS</p>
             </div>
           </div>
         </div>

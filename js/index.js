@@ -8,11 +8,10 @@ $(document).ready(function(){
     $(".collapse").on('show.bs.collapse', function(){
         $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
         $(this).prev(".card-header").find(".fa").removeClass("plusminus").addClass("minusplus");
-        $(this).prev(".card-header").removeProperty("border-bottom: 1px solid #444");
     }).on('hide.bs.collapse', function(){
         $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
         $(this).prev(".card-header").find(".fa").removeClass("minusplus").addClass("plusminus");
-        $(this).prev(".card-header").css("border-bottom: 1px solid #444");
+
     });
 
 
