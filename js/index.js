@@ -8,22 +8,15 @@ $(document).ready(function(){
     $(".collapse").on('show.bs.collapse', function(){
         $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
         $(this).prev(".card-header").find(".fa").removeClass("plusminus").addClass("minusplus");
+        $(this).prev(".card-header").find(".mb-0").removeClass("borderBottom").addClass("borderBottomNone");
+        $(this).prev(".card-header").find(".btn").removeClass("buttonText").addClass("buttonTextCollapse");
     }).on('hide.bs.collapse', function(){
         $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
         $(this).prev(".card-header").find(".fa").removeClass("minusplus").addClass("plusminus");
-
+        $(this).prev(".card-header").find(".mb-0").removeClass("borderBottomNone").addClass("borderBottom");
+        $(this).prev(".card-header").find(".btn").removeClass("buttonTextCollapse").addClass("buttonText");
     });
 
-
-      //   // Toggle plus minus icon on show hide of collapse element
-      //   $(".collapseJobs").on('show.bs.collapse', function(){
-      //     $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
-      //     $(this).prev(".card-header").find(".fa").removeClass("plusminus").addClass("minusplusJobs");
-      // }).on('hide.bs.collapse', function(){
-      //     $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
-      //     $(this).prev(".card-header").find(".fa").removeClass("minusplusJobs").addClass("plusminus");
-  
-      // });
 });
 
 

@@ -20,7 +20,6 @@
   padding: 6px;
   /* font-family: "Roboto" !important; */
   font-size: 10px !important;
-
 }
 
 .minusplus{
@@ -31,6 +30,24 @@
   padding: 6px;
   font-size: 10px !important;
 }
+
+.borderBottom{
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 7px;
+}
+
+.borderBottomNone{
+  border-bottom: none;
+}
+
+.collapseText{
+  color: #333 !important;
+}
+
+.collapseTextNone{
+  color: inherit;
+}
+
 
 .paddingPlaceholder{
   margin-top: 12px;
@@ -70,7 +87,19 @@
   font-size: 18px !important;
   color: #005174 !important;
   text-align: left !important;
+  text-decoration: none !important
 }
+
+.buttonTextCollapse{
+  font-family: "Roboto";
+  font-weight: 100 !important;
+  display: flex !important;
+  font-size: 18px !important;
+  color:#444444 !important;
+  text-align: left !important;
+  text-decoration: none !important
+}
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -171,7 +200,7 @@ body {
 }
 
 .bg-imgPriv{
-  background-image: url("./../img/home/clear-water-512911306.jpg");
+  background-image: url("./../img/privacy/privacy.jpg");
   background-color: rgba(255, 255, 255, 0);
   background-position: center center;
   background-repeat: no-repeat;
@@ -184,7 +213,7 @@ body {
 
 .imageLogo{
     position: relative;
-    top: 29%;
+    top: 31%;
     left: 4%;
     max-width: 32% !important;
 }
@@ -728,9 +757,11 @@ body {
   line-height: 26px;
   padding: 3px 20px;
   text-align: left;
-  line-height: 35px;
-  margin: 10px 35px;
+  line-height: 26px;
+  margin: 10px 20px;
  }
+
+
 
  .sixthPara{
      color: rgb(0, 81, 116);
@@ -917,21 +948,21 @@ body {
     text-decoration: none !important;
   }
 
-  .logoDiv a:hover{
+  /* .logoDiv a:hover{
     text-decoration: none;
     display: inherit !important;
     background-color: none !important;
-  }
+  } */
 
   .logoDivJob a{
     text-decoration: none !important;
   }
 
-  .logoDivJob a:hover{
+  /* .logoDivJob a:hover{
     text-decoration: none;
     display: inherit !important;
     background-color: none !important;
-  }
+  } */
 
 
 .centered {
@@ -1043,12 +1074,12 @@ body {
   background: #444444;
   opacity: 0.9;
   padding: 25px 3% 42px 3%;
-  height: 140px
+  height: 75px
 }
 
 .topnav.is-sticky .logoDiv{
   position: fixed;
-  top: 30px;
+  top: 12px;
   left: 72px;
 }
 
@@ -1117,6 +1148,19 @@ body {
 
 
 @media screen and (max-width: 600px) {
+
+  .marginLikeZoe{
+    margin: 0px 15px;
+  }
+
+  .marginLikeZoeThirty{
+    margin: 0px 30px !important;
+  }
+
+  #logoIndex{
+    display: none !important;
+  }
+
   .topnav a.linkHide{
     display: none;
   }
@@ -1268,7 +1312,7 @@ body {
   }
 
   .secondParaPaddingIndex{
-    padding: 0px 20px;
+    padding: 0px 15px;
   }
 
   .virtousCircle {
@@ -1475,12 +1519,12 @@ body {
      margin: 0px !important;
    }
 
-   .cardStyle{
+   /* .cardStyle{
     padding: 0px 0px;
     border: none !important;
     border-bottom: 1px solid #444;
     margin-bottom: 10px;
-   }
+   } */
 
    #textCenter {
     text-align: left;
@@ -1592,6 +1636,7 @@ input {
 
 .card-header{
   padding: 0px 0px !important;
+  border-bottom: none !important;
 }
 
 
