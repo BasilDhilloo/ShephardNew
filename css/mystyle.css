@@ -100,6 +100,18 @@
   text-decoration: none !important
 }
 
+.marginSix{
+  margin-top: -23px;
+}
+
+.fewNotesPadding{
+  padding: 0px 0px;
+}
+
+.marginFewNotes{
+  margin-top: 1.5rem;
+}
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -211,6 +223,16 @@ body {
   height: calc(100vh - 0px);
 }
 
+
+.tealTeaText{
+  font-size: 36px;
+  color: #FFFFFF;
+  text-align: left;
+  padding: 40px 20px;
+  line-height: 1.2;
+}
+
+
 .imageLogo{
     position: relative;
     top: 31%;
@@ -232,6 +254,10 @@ body {
 
 .expandFull{
   display: normal !important;
+}
+
+.hiddenImage{
+  display: none;
 }
 
 .navbar-toggler {
@@ -1105,6 +1131,10 @@ body {
   z-index: -1;
 }
 
+.topnav.is-sticky .hiddenImage{
+    display: inherit;
+}
+
 
 .topnav a.icon {
   /* float: right; */
@@ -1149,6 +1179,55 @@ body {
 
 @media screen and (max-width: 600px) {
 
+  .tealTeaText{
+    font-size: 36px;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 40px 30px !important;
+    line-height: 1.2;
+  }
+
+  
+  .marginFewNotes{
+    margin-top: 0rem;
+  }
+
+  .fewNotesPadding{
+    padding: 0px 0px 0px;
+  }
+  
+  .marginSix{
+    margin-top: -6px;
+  }
+
+  .availableText{
+    color: #005174;
+    display: block;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 43px;
+    line-height: 52px;
+    font-weight: 100;
+    text-align: left;
+    /* word-spacing: 10px; */
+    /* display: inline; */
+   }
+
+  .paddingFormJob{
+    margin-top: 50px;
+  }
+
+  .fifthPara{
+    font-size: 22px;
+    font-family: 'Roboto Slab';
+    line-height: 1.2em;
+    color: #444444;
+    line-height: 26px;
+    padding: 3px 20px;
+    text-align: left;
+    line-height: 37px;
+    margin: 15px 15px 25px;
+   }
+
   .marginLikeZoe{
     margin: 0px 15px;
   }
@@ -1184,6 +1263,11 @@ body {
 
       
 @media screen and (max-width: 600px) {
+
+
+  .paddingAvaibleOption{
+    padding: 0px 20px 0px 25px !important;
+  }
 
   .paddingForWeb{
     padding: 0px 40px !important;
@@ -1457,11 +1541,12 @@ body {
  
 
   .jobsKidsStyle{
-    text-align: center;
+    text-align: left;
     font-size: 42px;
     line-height: 1.2;
     color: #005174;
     font-family: 'Roboto';
+    margin: 5px 0px;
    }
 
   .propTechJobs{
